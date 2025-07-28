@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|c:\\users\\balaji.anandan\\source\\repos\\picker\\picker\\pages\\teampicker.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|solutionrelative:picker\\pages\\teampicker.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|c:\\users\\balaji.anandan\\source\\repos\\picker\\picker\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|solutionrelative:picker\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|c:\\users\\balaji.anandan\\source\\repos\\picker\\picker\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|solutionrelative:picker\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|c:\\users\\balaji.anandan\\source\\repos\\picker\\picker\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5321985D-0774-444E-A83C-31231EA912AE}|Picker\\Picker.csproj|solutionrelative:picker\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Picker\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\wwwroot\\index.html",
+              "RelativeToolTip": "Picker\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-28T03:06:32.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeamPicker.razor",
+              "DocumentMoniker": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Pages\\TeamPicker.razor",
+              "RelativeDocumentMoniker": "Picker\\Pages\\TeamPicker.razor",
+              "ToolTip": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Pages\\TeamPicker.razor",
+              "RelativeToolTip": "Picker\\Pages\\TeamPicker.razor",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T03:04:10.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Picker\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Picker\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T03:02:55.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Picker\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\balaji.anandan\\source\\repos\\Picker\\Picker\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Picker\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T03:02:49.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

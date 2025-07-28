@@ -1,0 +1,116 @@
+﻿@page "/TeamPicker"
+
+<div class="container py-4">
+
+    <h2 class="mb-4 text-center">🏏 Team Picker</h2>
+
+    <!-- Add Player Input -->
+    <div class="row g-2 align-items-center mb-3">
+        <div class="col-8 col-sm-10">
+            <input class="form-control" @bind="newPlayer" placeholder="Enter new player name" />
+        </div>
+        <div class="col-4 col-sm-2 d-grid">
+            <button class="btn btn-success" @onclick="AddPlayer">➕ Add Player</button>
+        </div>
+    </div>
+
+    <!-- Assign Player Button -->
+    <div class="d-grid mb-3">
+        <button class="btn btn-primary btn-lg" @onclick="AssignNextPlayer">🎲 Assign Player</button>
+    </div>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="alert alert-info text-center" role="alert">@message</div>
+    }
+
+    <!-- Players List -->
+    <div class="card mb-4">
+        <div class="card-header bg-light fw-bold">📋 Players List</div>
+        <div class="card-body p-0">
+            <table class="table table-striped m-0">
+                <thead class="table-light">
+                    <tr><th style="width: 50px;">#</th><th>Player</th></tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < players.Count; i++)
+                    {
+                        <tr><td>@(i + 1)</td><td>@players[i]</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Teams Section -->
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card border-danger h-100">
+                <div class="card-header bg-danger text-white fw-bold">🟥 Captain 1 Team</div>
+                <ul class="list-group list-group-flush">
+                    @foreach (var p in captain1Team)
+                    {
+                        <li class="list-group-item">@p</li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card border-primary h-100">
+                <div class="card-header bg-primary text-white fw-bold">🟦 Captain 2 Team</div>
+                <ul class="list-group list-group-flush">
+                    @foreach (var p in captain2Team)
+                    {
+                        <li class="list-group-item">@p</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    List<string> players = new() { "Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah", "Ian", "Jack" };
+    List<string> assignedPlayers = new();
+    List<string> captain1Team = new();
+    List<string> captain2Team = new();
+    bool assignToCaptain1 = true;
+    Random rng = new();
+    string message = "";
+    string newPlayer = "";
+
+    void AssignNextPlayer()
+    {
+        var remaining = players.Except(assignedPlayers).ToList();
+        if (remaining.Count == 0)
+        {
+            message = "✅ All players assigned!";
+            return;
+        }
+
+        var selected = remaining[rng.Next(remaining.Count)];
+        assignedPlayers.Add(selected);
+
+        if (assignToCaptain1)
+            captain1Team.Add(selected);
+        else
+            captain2Team.Add(selected);
+
+        assignToCaptain1 = !assignToCaptain1;
+        message = $"🍉 {selected} assigned to {(assignToCaptain1 ? "Captain 2" : "Captain 1")}";
+    }
+
+    void AddPlayer()
+    {
+        if (!string.IsNullOrWhiteSpace(newPlayer) && !players.Contains(newPlayer.Trim()))
+        {
+            players.Add(newPlayer.Trim());
+            newPlayer = "";
+            message = "✅ Player added!";
+        }
+        else
+        {
+            message = "⚠️ Invalid or duplicate player name.";
+        }
+    }
+}
